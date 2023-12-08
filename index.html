@@ -77,13 +77,13 @@
 
     <script>
      
-      function onSignIn(googleUser) {
+     function onSignIn(googleUser) {
       var profile = googleUser.getBasicProfile();
-      console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+      console.log('ID: ' + profile.getId());
       console.log('Name: ' + profile.getName());
-      console.log('Image URL: ' + profile.getImageUrl());
-      console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present. 
-     }
+      console.log('Email: ' + profile.getEmail());
+      // Adicione aqui a lógica para autenticar o usuário no seu sistema.
+    }
 
      function signOut() {
       var auth2 = gapi.auth2.getAuthInstance();

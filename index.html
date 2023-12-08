@@ -92,30 +92,6 @@
       });
     }
 
-
-        const express = require('express');
-        const app = express();
-        
-        // Configurar cabeçalhos CORS
-        app.use((req, res, next) => {
-          res.header('Access-Control-Allow-Origin', 'https://gabrielrochasilva.github.io');
-          // Adicionar outros cabeçalhos CORS, se necessário
-          next();
-        });
-        
-        // Configurar a política Cross-Origin-Opener-Policy (COOP)
-        app.use((req, res, next) => {
-          res.header('Cross-Origin-Opener-Policy', 'mesma-origem');
-          // Outras configurações COOP podem ser adicionadas aqui
-          next();
-        });
-        
-        // Resto da configuração do servidor
-        
-        const port = 3000;
-        app.listen(port, () => {
-          console.log(`Servidor rodando na porta ${port}`);
-        });
     </script>
 </body>
 

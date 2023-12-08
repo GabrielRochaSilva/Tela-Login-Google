@@ -12,7 +12,7 @@
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 <body>
-    
+     <a href="#" onclick="signOut();">Sign out</a>
 
     <div class="tela-login">
         <form action="">
@@ -32,7 +32,9 @@
               <button  type="button" class="btn" onclick="loginWithFacebook()"><i class="bi bi-facebook"></i> Login com 
                 Facebook</button>
                   <div class="g-signin2" data-onsuccess="onSignIn"></div>
-                  <a href="#" onclick="signOut();">Sign out</a>
+                  
+                <button  type="button" class="btn g-signin2" data-onsuccess="onSignIn"><i class="bi bi-google"></i> Login com Google</button>
+                
               </div>
     
             <button type="submit" class="btn botao">Entrar</button>
